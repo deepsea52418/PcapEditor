@@ -1,0 +1,61 @@
+.hex-editor-container {
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  background-color: #fff;
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+}
+
+.hex-editor-container.empty {
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offset-column, .hex-column, .ascii-column {
+  padding: 0 10px;
+  line-height: 1.5;
+  white-space: pre;
+}
+
+.offset-column {
+  color: #999;
+  text-align: right;
+}
+
+.hex-byte, .ascii-char {
+  display: inline-block;
+  width: 2ch; /* 2 characters width */
+  text-align: center;
+  margin: 0 1px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.ascii-char {
+    width: 1ch;
+}
+
+.hex-byte.highlighted, .ascii-char.highlighted {
+  background-color: #FFD700; /* Gold */
+}
+
+.hex-byte.selected, .ascii-char.selected {
+  background-color: #ADD8E6; /* Light Blue */
+  outline: 1px solid #4A90E2;
+}
+
+.hex-input {
+  width: 2ch;
+  padding: 0;
+  margin: 0 1px;
+  border: 1px solid #4A90E2;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+  background-color: #E0F7FA;
+  outline: none;
+}

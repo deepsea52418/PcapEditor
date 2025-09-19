@@ -1,0 +1,4 @@
+# /home/tsn/PcapEditor/backend/requirements.txt
+flask
+flask_cors
+scapy
